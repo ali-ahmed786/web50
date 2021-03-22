@@ -38,13 +38,13 @@ padding-left:40px;
     input[type="submit"]{
       border-radius:4px;
       outline:none;
-      margin:8% 1% 5% 3%;
+      margin:2% 44% 0 44%;
       font-family: arial,sans-serif;
       font-size:17px;
       background-color:#f8f9fa;
       border:solid 1px #f8f9fa;
       color:#3c4043;
-      width:45%;
+      width:12%;
       height:42px;
       text-align:center;
       overflow: hidden;
@@ -54,11 +54,7 @@ input[type="submit"]:hover{
   border:solid 2px #d9d9d9;
   color:#262626;
 }
-.button-alignment{
-  width:30%;
-  display:block;
-  margin:auto;
-}
+
 ul{
 display:flex;
 justify-content: flex-end;
@@ -66,7 +62,7 @@ justify-content: flex-end;
 li{
   list-style-type:none;
   display:inline;
-  margin:2% 4% 1% 0%;
+  margin:2% 1.5% 1% 0;
   overflow: hidden;
 
 }
@@ -78,6 +74,14 @@ a{
 a:hover{
   text-decoration: underline;
 }
+.logo-subtext {
+    color: #4285f4;
+    font:18px roboto-regular, arial, sans-serif;
+    margin:-1.5% 0 1.5% 0;
+    left: 57.5%;
+    position: relative;
+    white-space: nowrap;
+  }
 @media only screen and (max-width: 600px) {
   img{
     width:60%;
@@ -88,40 +92,57 @@ a:hover{
 .button-alignment{
   width:70%;
 }
+.logo-subtext {
+  margin:-3.5% 0 3.5% 0;
+    left: 67.5%;
+  }
+  li{
+    margin:2% 4% 1% 0;
+  }
+  input[type="submit"]{
+    width:30%;
+    margin:2% 32.5% 0 32.5%;
+  }
 }
 
 @media only screen and (max-width:1100px) and (min-width:600px) {
+  li{
+    margin:2% 2.5% 1% 0;
+  }
   img{
     width:40%;
   }
   input[type="text"]{
     width:60%;
 }
-.button-alignment{
-  width:60%;
+.logo-subtext {
+    left: 61.5%;
+    margin:-2.5% 0 2.5% 0;
+  }
+input[type="submit"]{
+  width:20%;
+  margin:2% 40% 0 40%;
+}
 }
 
-}
   </style>
-  <title>Google</title>
+  <title>Google Image</title>
 
 </head>
 
 <body>
   <ul>
-    <li><a href="imagesearch.html">Image search</a></li>
+    <li><a href="google.html">Google Search</a></li>
     <li><a href="advancedsearch.html">Advanced Search</a></li>
   </ul>
 
 <div class="img-div">
   <img src="googlelogo.png">
 </div>
-  <form action="https://google.com/search">
+<p class="logo-subtext">Images</p>
+  <form action="http://www.google.com/images">
               <input type="text" name="q"   autocomplete="off" >
-              <div class="button-alignment">
               <input type="submit" value="Google Search">
-              <input type="submit" name="btnI" value="I'm Feeling Lucky">
-            </div>
   </form>
 </body>
 </html>

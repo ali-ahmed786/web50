@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style media="screen">
+
+img{
+  width:11%;
+  margin:0.7%;
+
+}
+.img-div{
+  width:100%;
+  background-color:#f1f1f1;
+  margin:-1% 0 0 -1%;
+  padding:1% 0 0.4% 1.2%;
+}
+.labin{
+  width:100%;
+  margin-bottom:3%;
+}
+label{
+  color:black; font: 16px  arial, sans-serif;
+   margin-left:1.8%;
+   margin-right: 5%;
+   width:30%;
+   padding:15px;
+   vertical-align:middle;
+}
+.loinput{
+  width:17.2% !important;
+  position:absolute !important;
+}
+.hiinput{
+  width:17.2% !important;
+  position:absolute !important;
+  left:42.8% !important;
+}
+.to{
+  width:5%; position:absolute; padding: 5px; left:38.3%;
+}
+input[type=text], input[type=number]{
+  width:40%;
+  height:1%;
+  padding:1%;
+position:absolute;
+left:20%;
+border:1px solid #d9d9d9;
+border-radius:2px;
+outline:none;
+}
+input[type=text]:focus,input[type=number]:focus{
+border-color:blue;
+}
+input[type=submit]{
+  background-color: #4d90fe;
+  color:white; font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  outline:none;
+  width:10%;
+  padding:10px;
+  border-radius:2px;
+  position:absolute;
+  left:52%;
+}
+a{
+  font-family: arial,sans-serif;
+  color:rgba(0,0,0,0.87);
+  text-decoration:none;
+  font-size:16pt;
+}
+a:hover{
+  text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+  img{
+    width:20%;
+  }
+  input[type="text"]{
+    width:50%;
+    left:40%;
+}
+label{
+width:35%;
+}
+  input[type="submit"]{
+    width:20%;
+  }
+  .loinput{
+    width:20% !important;
+    left:40% !important;
+  }
+  .hiinput{
+    width:20% !important;
+    left:70% !important;
+  }
+  .to{
+    left:62.5%;
+  }
+}
+
+@media only screen and (max-width:1100px) and (min-width:600px) {
+
+  img{
+    width:15%;
+  }
+  input[type="text"]{
+    width:50%;
+    left:40%;
+}
+
+label{
+  width:35%;
+}
+input[type="submit"]{
+  width:20%;
+}
+.loinput{
+  width:20% !important;
+  left:40% !important;
+}
+.hiinput{
+  width:20% !important;
+  left:66% !important;
+}
+.to{
+  left:60%;
+}
+}
+  </style>
+  <title>Google Image</title>
+
+</head>
+
+<body>
+<div class="img-div">
+  <a href="google.html"><img src="googlelogo.png"></a>
+  <li style="float:right; list-style-type:none; margin:2%;"><a href="google.html">Google Search</a></li>
+</div>
+
+<p style="color:red; font: 24px roboto-regular, arial, sans-serif; padding:0.7%; margin-left:2.2%">Advanced Search</p>
+<hr style=" width:100%; margin-block-start: 0em; margin-block-end: 0em;  border: none; height: 0.7px; background-color: #f2f2f2">
+<br>
+<p style="color:black; font: 18px  arial, sans-serif; padding:0.7%; margin-left:2.2%">Find Pages with...</p>
+  <form action="https://www.google.co.uk/search" name="f">
+    <div class="labin">
+  <label>all these words:</label>
+<input type="text" name="as_q"   autocomplete="off" ><br>
+</div>
+<div class="labin">
+<label>this exact word or phrase:</label>
+<input type="text" name="as_epq"   autocomplete="off" ><br>
+</div>
+<div class="labin">
+<label>any of these words:</label>
+<input type="text" name="as_oq"   autocomplete="off" ><br>
+</div>
+<div class="labin">
+<label>none of these words:</label>
+<input type="text" name="as_eq"   autocomplete="off" ><br>
+</div>
+<div class="labin">
+<label style="width:10%; ">numbers ranging from:</label>
+<input type="number" name="as_nlo"  class="loinput" autocomplete="off" >
+<label class="to">to</label>
+<input type="number" name="as_nhi"  class="hiinput" autocomplete="off" >
+</div>
+<input type="submit" value="Advanced Search">
+  </form>
+</body>
+</html>
